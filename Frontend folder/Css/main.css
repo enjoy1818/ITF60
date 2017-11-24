@@ -1,7 +1,13 @@
 .side-navbar{
     width: 20%;
-    min-width: 25vh;
+    min-width: 15vh;
     height: 100vh;
-    border: 1px;
     background-color: black;
+    z-index: 1;
+    float: left;
+}
+.frame-navbar{
+    background-color: crimson;
+    height: 5%;
+    min-height: 10vh;
 }

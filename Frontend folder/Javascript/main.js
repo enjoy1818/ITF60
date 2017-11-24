@@ -1,9 +1,4 @@
 $(function(){
-    if((screen.width >= 1024)){
-        $('.side-navbar').show(1000);
-    }
-    else{
-        $('.side-navbar').hide(1000)
-    }
-
+    $('.side-navbar').css('display', 'none').show(1500)
+    $('.frame-navbar').css('display', 'none').show(665)
 });
