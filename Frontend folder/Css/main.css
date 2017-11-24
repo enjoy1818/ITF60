@@ -1,0 +1,7 @@
+.side-navbar{
+    width: 20%;
+    min-width: 25vh;
+    height: 100vh;
+    border: 1px;
+    background-color: black;
+}
