@@ -1,6 +1,6 @@
 .side-navbar{
-    width: 20%;
-    min-width: 15vh;
+    width: 15%;
+    min-width: 10vh;
     height: 100vh;
     background-color: black;
     z-index: 1;
@@ -8,6 +8,6 @@
 }
 .frame-navbar{
     background-color: crimson;
-    height: 8%;
-    min-height: 10vh;
+    height: 5%;
+    min-height: 5vh;
 }
