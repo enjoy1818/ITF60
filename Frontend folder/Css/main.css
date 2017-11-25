@@ -6,6 +6,9 @@
 #collpse{
     background-color: black;
 }
+ul{
+    list-style: none;
+}
 .user-image{
     width: 15vh;
     height: 15vh;
@@ -23,6 +26,7 @@
 
 .user-panel-1, .user-panel-2, .user-panel-3{
     margin-top: 15px;
+    color: grey;
     display: block;
 }
 .alert{
