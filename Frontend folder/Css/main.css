@@ -42,7 +42,9 @@
 .option a{
     color: black;
 }
-
+.nav-tabs{
+    margin-left: 20vw;
+}
 
 @media (max-width: 1024px){
     .option{
@@ -78,5 +80,11 @@
     }
     .side-navbar{
         display: block;
+        float: left;
+        transition: 10s;
+        position: absolute;
+    }
+    .frame-navbar{
+        position: relative;
     }
 }
