@@ -11,11 +11,26 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div>
       <div class="pageframe">
-        <div class="side-navbar">
+        <div class="side-navbar-dsktop">
           <div class="container">
             <div class="row">
-              <div class="col-md-12 text-right"><button class="side-nav-close">&times;</button></div>
+              <div class='col-md-12 text-center'>
+                <img src="user1.jpg" alt="" class="user-image img-fluid">
+              </div>
+            </div>
+            <div class="user-panel text-center">
+              <h4 class="user-panel-name">My Name</h4>
+              <a href="#" class="user-panel-1">My profile</a>
+              <a href="#" class="user-panel-2">My Event</a>
+              <a href="#" class="user-panel-3">Log out</a>
+            </div>
+          </div>
+        </div>
+        <div class="collapse">
+          <div class="container">
+            <div class="row">
               <div class='col-md-12 text-center'>
                 <img src="user1.jpg" alt="" class="user-image img-fluid">
               </div>
@@ -36,7 +51,7 @@
               </div>
               <div class="option justify-content-end">
                 <h2>
-                  <a href="#" src='.side-navbar' class="side-nav-toggle">
+                  <a href="#" class="side-nav-toggle" onclick="opennav();">
                     <i class="fa fa-bars" id="option-icon"></i>
                   </a>
                 </h2>
