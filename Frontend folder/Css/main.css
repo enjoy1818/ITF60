@@ -49,22 +49,22 @@ ul{
     margin-left: 20vw;
 }
 
-@media (max-width: 1024px){
+@media (max-width: 961px){
     .option{
         display: inline;
     }
     .option a{
-        position: absolute;
+        position: relative;
     }
     .side-navbar-dsktop{
         display: none;
     }
     .frame-navbar{
-        width: 100%;
-        position: relative;
+        width: 125vw;
+        overflow-y: hidden;
     }
     .card-control{
-        position: absolute;
+        max-width: 75vw;
     }
     .card{
         width: 50vw;
@@ -76,10 +76,15 @@ ul{
         font-size: 2.5vw;
         color: azure;
     }
-
+    .container{
+        margin-left: 12.5vh;
+    }
+    .nav-item{
+        font-size: 1.75vw;
+    }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 960px){
     .option{
         display: none;
     }
