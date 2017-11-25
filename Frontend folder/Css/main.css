@@ -36,12 +36,13 @@
     display: none;
 }
 .card{
-    margin-left: 8vh;
+    margin-left: 4vw;
     margin-top: 4vh;
 }
-.option{
-    display: none;
+.option a{
+    color: black;
 }
+
 
 @media (max-width: 1024px){
     .option{
@@ -49,11 +50,33 @@
     }
     .side-navbar{
         display: none;
+        z-index: 1;
+        width: 50%;
+        position: absolute;
+        height: 100vw;
+        opacity: 0.7;
     }
+    .frame-navbar{
+        width: 100%;
+        position: relative;
+    }
+    .card-control{
+        position: absolute;
+    }
+    .card{
+        width: 50vw;
+    }
+
 }
 
 @media (min-width: 1024px){
     .option{
         display: none;
+    }
+    .side-nav-close{
+        display: none;
+    }
+    .side-navbar{
+        display: block;
     }
 }

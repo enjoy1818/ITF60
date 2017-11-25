@@ -1,6 +1,9 @@
 $(function() {
-    $('.group-list').css({display: 'none'}).show(1600);
-    $('.side-navbar').css({display: 'none'}).show(1500);
-    $('.frame-navbar').css({display: 'none'}).show(665);
-    $('.user-image').css({display: 'none'}).delay(1500).show(100);
+    $('.side-nav-toggle').click(function() {
+        $('.side-navbar').toggle();
+    });
+    $('.side-nav-close').click(function() {
+        $('.side-navbar').toggle();
+    });
+    
 });
