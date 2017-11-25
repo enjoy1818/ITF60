@@ -18,6 +18,11 @@
     margin-top: 100px;
     margin-bottom: 20px;
 }
-.user-name{
-    position: relative;
+.user-panel{
+    font-size: 20px;
+}
+
+.user-panel-1, .user-panel-2, .user-panel-3{
+    margin-top: 20px;
+    display: block;
 }
