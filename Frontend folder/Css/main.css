@@ -60,8 +60,8 @@ ul{
         display: none;
     }
     .frame-navbar{
-        width: 125vw;
-        overflow-y: hidden;
+        width: 100vw;
+        overflow-x: hidden;
     }
     .card-control{
         max-width: 75vw;
