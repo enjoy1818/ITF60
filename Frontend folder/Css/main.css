@@ -20,12 +20,14 @@ ul{
     font-size: 1.25vw;
 }
 .user-panel-name{
-    font-size: 2vw;
+    font-size: 1.75vw;
     color: azure;
+    margin-left: 5px;
 }
 
 .user-panel-1, .user-panel-2, .user-panel-3{
     margin-top: 15px;
+    margin-right: 15px;
     color: grey;
     display: block;
 }
@@ -71,9 +73,10 @@ ul{
     }
     .user-panel{
         font-size: 1.75vw;
+        padding-right: 20px;
     }
     .user-panel-name{
-        font-size: 2.5vw;
+        font-size: 2.0vw;
         color: azure;
     }
     .container{
@@ -99,7 +102,7 @@ ul{
         z-index: 1;
         float: left;
         position: relative;
-        overflow-x: hidden;
+        overflow-y: hidden;
     }
     .side-navbar-mbile{
         display: none;
