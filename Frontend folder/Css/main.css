@@ -3,7 +3,7 @@
     height: 5%;
     min-height: 5vh;
 }
-#user-collpse{
+#collpse{
     background-color: black;
 }
 .user-image{
@@ -58,6 +58,13 @@
     }
     .card{
         width: 50vw;
+    }
+    .user-panel{
+        font-size: 1.75vw;
+    }
+    .user-panel-name{
+        font-size: 2.5vw;
+        color: azure;
     }
 
 }
