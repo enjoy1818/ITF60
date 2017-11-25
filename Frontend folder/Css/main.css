@@ -3,6 +3,9 @@
     height: 5%;
     min-height: 5vh;
 }
+#user-collpse{
+    background-color: black;
+}
 .user-image{
     width: 15vh;
     height: 15vh;
