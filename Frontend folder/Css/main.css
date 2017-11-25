@@ -14,8 +14,8 @@
     min-height: 5vh;
 }
 .user-image{
-    width: 15vh;
-    height: auto;
+    width: 15vw;
+    height: 15vh;
     border-radius: 70%;
     margin-top: 100px;
     margin-bottom: 20px;
