@@ -39,6 +39,12 @@ ul{
 .option a{
     color: black;
 }
+.user-panel a{
+    color: silver;
+}
+.user-panel a:focus, .user-panel a:hover{
+    color: grey;
+}
 .nav-tabs{
     margin-left: 20vw;
 }
