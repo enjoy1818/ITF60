@@ -39,3 +39,21 @@
     margin-left: 8vh;
     margin-top: 4vh;
 }
+.option{
+    display: none;
+}
+
+@media (max-width: 1024px){
+    .option{
+        display: inline;
+    }
+    .side-navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 1024px){
+    .option{
+        display: none;
+    }
+}
