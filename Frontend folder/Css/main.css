@@ -1,3 +1,7 @@
+body{
+    background-image: url("BackgroundWeb2.png");
+    z-index: -10;
+}
 .frame-navbar{
     background-color: crimson;
     height: 5%;
@@ -95,6 +99,7 @@ ul{
         display: none;
     }
     .side-navbar-dsktop{
+        background-image: url("BackGroundUser.png");
         width: 15%;
         min-width: 10vh;
         height: 100vh;
