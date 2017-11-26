@@ -1,13 +1,113 @@
-.side-navbar{
-    width: 20%;
-    min-width: 15vh;
-    height: 100vh;
-    background-color: black;
-    z-index: 1;
-    float: left;
-}
 .frame-navbar{
     background-color: crimson;
     height: 5%;
-    min-height: 10vh;
+    min-height: 5vh;
+}
+#collpse{
+    background-color: black;
+}
+ul{
+    list-style: none;
+}
+.user-image{
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+.user-panel{
+    font-size: 1.25vw;
+}
+.user-panel-name{
+    font-size: 1.75vw;
+    color: azure;
+    margin-left: 5px;
+}
+
+.user-panel-1, .user-panel-2, .user-panel-3{
+    margin-top: 15px;
+    margin-right: 15px;
+    color: grey;
+    display: block;
+}
+.alert{
+    display: none;
+}
+.card{
+    margin-left: 4vw;
+    margin-top: 4vh;
+}
+.option a{
+    color: black;
+}
+.user-panel a{
+    color: silver;
+}
+.user-panel a:focus, .user-panel a:hover{
+    color: grey;
+}
+.nav-tabs{
+    margin-left: 20vw;
+}
+
+@media (max-width: 961px){
+    .option{
+        display: inline;
+    }
+    .option a{
+        position: relative;
+    }
+    .side-navbar-dsktop{
+        display: none;
+    }
+    .frame-navbar{
+        width: 100vw;
+        overflow-x: hidden;
+    }
+    .card-control{
+        max-width: 75vw;
+    }
+    .card{
+        width: 50vw;
+    }
+    .user-panel{
+        font-size: 1.75vw;
+        padding-right: 20px;
+    }
+    .user-panel-name{
+        font-size: 2.0vw;
+        color: azure;
+    }
+    .container{
+        margin-left: 12.5vh;
+    }
+    .nav-item{
+        font-size: 1.75vw;
+    }
+}
+
+@media (min-width: 960px){
+    .option{
+        display: none;
+    }
+    .side-nav-close{
+        display: none;
+    }
+    .side-navbar-dsktop{
+        width: 15%;
+        min-width: 10vh;
+        height: 100vh;
+        background-color: black;
+        z-index: 1;
+        float: left;
+        position: relative;
+        overflow-y: hidden;
+    }
+    .side-navbar-mbile{
+        display: none;
+    }
+    .frame-navbar{
+        position: relative;
+    }
 }
