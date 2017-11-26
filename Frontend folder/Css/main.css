@@ -13,10 +13,7 @@ body{
 ul{
     list-style: none;
 }
-.dsktop{
-    background-color: black;
-    opacity: 0.5;
-}
+
 .user-image{
     width: 15vh;
     height: 15vh;
@@ -26,6 +23,9 @@ ul{
 }
 .user-panel{
     font-size: 1.25vw;
+}
+.main-event-name{
+    text-align: center;
 }
 .user-panel-name{
     font-size: 1.75vw;
