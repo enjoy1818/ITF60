@@ -169,12 +169,16 @@ ul{
         color: white;
         float: left;
         border: none;
-        outline: none;
+        outline-style: none;
+        outline-color: #cf6766;
         cursor: pointer;
         padding: 10px 14px;
         font-size: 17px;
         width: 25%;
         display: inline-block;
+    }
+    .main-page-button:focus{
+        outline: none !important;
     }
     .main-page{
         width: 100%;
@@ -223,5 +227,8 @@ ul{
         font-size: 17px;
         width: 21%;
         display: inline-block;
+    }
+    .main-page-button:focus{
+        outline: none !important;
     }
 }
