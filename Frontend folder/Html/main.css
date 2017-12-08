@@ -1,9 +1,10 @@
 body{
-    background-image: url("imageedit_31_4148023806.png");
+    background-image: url("");
+    background-color: #30415D;
     z-index: -10;
 }
 .frame-navbar{
-    background-color: #0F2B92;
+    background-color: #30415D;
     height: 5%;
     min-height: 5vh;
 }
@@ -12,6 +13,16 @@ body{
 }
 ul{
     list-style: none;
+}
+
+.links > a {
+    color: white;
+    padding: 0 25px;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    text-transform: uppercase;
 }
 
 .user-image{
@@ -69,7 +80,13 @@ ul{
     color: #0F2B92;
 }
 #menu-item-1{
-
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+#menu-item-4{
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
 .card-img-top{
     width: 200px;
     height: 125px;
@@ -83,44 +100,7 @@ ul{
 .main-event{
     width: 80vw;
 }
-.form-input-login{
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none;
-}
-.form-input-login:focus{
-    outline: none;
-    -webkit-autofill: none;
-}
-.menu{
-    width: 100%;
-}
-.main-page-menu{
-    width: 105vw;
-    display: block;
-}
 
-.main-page-button:hover {
-    background-color: #777;
-}
-
-/* Style the tab content (and add height:100% for full page content) */
-.tabcontent {
-    color: white;
-    display: none;
-    padding: 100px 20px;
-    height: 100%;
-    width: 70vw;
-    float: left;
-}
-.main-content{
-    display: block;
-}
-
-#Home {background-color: #cf6766;}
-#News {background-color: #cf6766;}
-#Contact {background-color: #cf6766;}
-#About {background-color: #cf6766;}
 @media (max-width: 961px){
     .dsktop, .sub-event{
         display: none;
@@ -143,7 +123,7 @@ ul{
         overflow-x: hidden;
     }
     .card-control{
-        max-width: 100vw;
+        max-width: 75vw;
     }
     .card{
         width: 50vw;
@@ -162,34 +142,11 @@ ul{
     .nav-item{
         font-size: 1.75vw;
     }
-    .main-page-menu-mbile{
-        width: 100vw;
-    }
-    .main-page-button{
-        background-color: #555;
-        color: white;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 10px 14px;
-        font-size: 17px;
-        width: 25%;
-        display: inline-block;
-    }
-    .main-page{
-        width: 100%;
-        margin-left: 10vw;
-    }
 }
 
 @media (min-width: 960px){
     .option{
         display: none;
-    }
-    .main-page{
-        width: 100%;
-        margin-left: 20vw;
     }
     .main-event{
         margin-left: 20vh;
@@ -198,11 +155,12 @@ ul{
         display: none;
     }
     .side-navbar-dsktop{
-        background-image: url("BackGroundUser.png");
+        background-image: url("");
         width: 15%;
         min-width: 10vh;
-        height: 100vh;
-        background-color: black;
+        height: 100vw;
+        background-color: #031424;
+        z-index: 1;
         float: left;
         position: relative;
         overflow-y: hidden;
@@ -212,17 +170,5 @@ ul{
     }
     .mbile{
         display: none;
-    }
-    .main-page-button{
-        background-color: #555;
-        color: white;
-        float: left;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        padding: 10px 14px;
-        font-size: 17px;
-        width: 21%;
-        display: inline-block;
     }
 }

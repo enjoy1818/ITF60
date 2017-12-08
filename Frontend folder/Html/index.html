@@ -11,12 +11,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div>
       <div class="pageframe">
         <div class="side-navbar-dsktop">
           <div class="container">
             <div class="row">
               <div class='col-md-12 text-center'>
+                <H1 class="text-center" style="color: green;">IT-Event</H1>
                 <img src="user1.jpg" alt="" class="user-image img-fluid">
               </div>
             </div>
@@ -30,10 +30,15 @@
             </div>
           </div>
         </div>
+        <div class="main-page-menu container-fluid dsktop">
+            <button class="tablink main-page-button" onclick="openPage('Home', this, '#cf6766')">Home</button>
+            <button class="tablink main-page-button" onclick="openPage('News', this, '#cf6766')" id="defaultOpen">News</button>
+            <button class="tablink main-page-button" onclick="openPage('Contact', this, '#cf6766')">Contact</button>
+            <button class="tablink main-page-button" onclick="openPage('About', this, '#cf6766')">About</button>
+        </div>
       </div>
-          <nav class="frame-navbar navbar">
+          <nav class="frame-navbar navbar mbile">
             <div class="container-fluid">
-              <H1 class="text-center">IT-Event</H1>
               <div class="option justify-content-end">
                 <h2>
                   <a href="#" class="side-nav-toggle" data-toggle="collapse" data-target='#user-collapse'>
@@ -42,28 +47,8 @@
                 </h2>
               </div>
             </div>
-            <div class="container-fluid">
-              <div class="menu">
-                <ul class="nav-tabs nav">
-                  <li class="nav-item" id="menu-item-1">
-                    <a href="#" class="nav-link board-panel" data-board='sport'>Sports</a>
-                  </li>
-                  <li class="nav-item" id="menu-item-2">
-                    <a href="#" class="nav-link board-panel" data-board='entertain'>Entertainment</a>
-                  </li>
-                  <li class="nav-item" id="menu-item-3">
-                    <a href="#" class="nav-link board-panel" data-board='tech'>Technology</a>
-                  </li>
-                  <li class="nav-item" id="menu-item-4">
-                    <a href="#" class="nav-link board-panel" data-board='Motorsport'>Motorsport</a>
-                  </li>
-                </ul>
-              </div>
-            </div>
           </nav>
-        </div>
-      </div>
-      <div class="container ">
+          
         <section class="row card-control justify-content-center">
             <div class="collapse col-sm-12" id="user-collapse">
                 <div class="row">
@@ -78,35 +63,56 @@
                   <a href="#" class="user-panel-3">Log out</a>
                 </div>
             </div>
-            <div class="card col-lg-3 col-md-12 col-sm-12">
-              <a href="event.html">
-                <img class="card-img-top dsk-size" alt="" src="http://imgfill.com/125x125">
-                <div class="card-body">
-                  <h4 class="card-title">Title</h4>
-                  <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo sed unde reiciendis ducimus? Minus in vel ab voluptates, porro quaerat!</p>
+          </section>
+          <section>
+              <div class="container-fluid main-page-menu-mbile mbile">
+                  <button class="tablink main-page-button" onclick="openPage('Home', this, '#cf6766')">Home</button>
+                  <button class="tablink main-page-button" onclick="openPage('News', this, '#cf6766')" id="defaultOpen">News</button>
+                  <button class="tablink main-page-button" onclick="openPage('Contact', this, '#cf6766')">Contact</button>
+                  <button class="tablink main-page-button" onclick="openPage('About', this, '#cf6766')">About</button>
+              </div>
+              <div class="container-fluid main-page">
+                  <div class="container-fluid main-page-content">
+                        <div id="Home" class="tabcontent">
+                         
+                        </div>
+                        
+                        <div id="News" class="tabcontent">
+                          <h3>News</h3>
+                          <p>Some news this fine day!</p> 
+                        </div>
+                        
+                        <div id="Contact" class="tabcontent">
+                          <h3>Contact</h3>
+                          <p>Get in touch, or swing by for a cup of coffee.</p>
+                        </div>
+                        
+                        <div id="About" class="tabcontent">
+                          <h3>About</h3>
+                          <p>Who we are and what we do.</p>
+                        </div>
+                  </div>
                 </div>
-              </a>
-            </div>
-            
-            <div class="card col-lg-3 col-md-12 col-sm-12">
-              <img class="card-img-top" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
-              </div>
-            </div>
-
-            <div class="card col-lg-3 col-md-12 col-sm-12">
-              <img class="card-img-top" alt="">
-              <div class="card-body">
-                <h4 class="card-title">Title</h4>
-                <p class="card-text">Text</p>
-              </div>
-            </div>
-
-        </section>
-      </div>
+          </section>
     <!-- Optional JavaScript -->
+    <script>
+      function openPage(pageName,elmnt,color) {
+          var i, tabcontent, tablinks;
+          tabcontent = document.getElementsByClassName("tabcontent");
+          for (i = 0; i < tabcontent.length; i++) {
+              tabcontent[i].style.display = "none";
+          }
+          tablinks = document.getElementsByClassName("tablink");
+          for (i = 0; i < tablinks.length; i++) {
+              tablinks[i].style.backgroundColor = "";
+          }
+          document.getElementById(pageName).style.display = "block";
+          elmnt.style.backgroundColor = color;
+      
+      }
+      // Get the element with id="defaultOpen" and click on it
+      document.getElementById("defaultOpen").click();
+      </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src='../Javascript/main.js'></script>
