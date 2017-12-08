@@ -4,9 +4,10 @@
     width: 50vh;
     height: 50vh;
 }
-.main-event{
-    margin-right: 10vh;
+.event-name{
+    text-align: center;
 }
+
 .sub-event-head-img{
     margin-right: 20vh;
 }
@@ -24,18 +25,26 @@
 .sub-event-description-button{
     background-color: #D79600;
     color: black;
-    width: 80vh;
-    margin-top: 5vh;
+    width: 40vh;
+    height: 5vh;
     padding-left: 2vh;
     border-radius: 10px;
+    display: inline;
+    text-align: center;
 }
 .sub-event-description-button:hover{
     background-color: green;
     text-underline-position: none;
 }
+.sub-event-description-button:focus{
+    background-color: green;
+    text-underline-position: none;
+}
 @media (max-width: 960px){
+    .sub-event-description-button{
+    }
     .main-event{
-        margin-right: 7.5vh;
+        margin-right: 15vh;
     }
     .sub-event-head-img{
         width: 100px;
@@ -44,9 +53,18 @@
     .mbile-sub-event-img{
         margin-left: 25vh;
     }
+    .event-image{
+        text-align: center;
+    }
 }
 @media (min-width: 960px) {
     .mbile{
         display: none;
+    }
+    .event-image{
+        text-align: center;
+    }
+    .main-event{
+        margin-right: 10vw;
     }
 }
