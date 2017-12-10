@@ -30,14 +30,7 @@
             </div>
           </div>
         </div>
-        <div class="main-page-menu container-fluid dsktop">
-            <button class="tablink main-page-button" onclick="openPage('Home', this, '#cf6766')">Home</button>
-            <button class="tablink main-page-button" onclick="openPage('News', this, '#cf6766')" id="defaultOpen">News</button>
-            <button class="tablink main-page-button" onclick="openPage('Contact', this, '#cf6766')">Contact</button>
-            <button class="tablink main-page-button" onclick="openPage('About', this, '#cf6766')">About</button>
-        </div>
-      </div>
-          <nav class="frame-navbar navbar mbile">
+        <nav class="frame-navbar navbar mbile">
             <div class="container-fluid">
               <div class="option justify-content-end">
                 <h2>
@@ -48,7 +41,14 @@
               </div>
             </div>
           </nav>
-          
+      </div>
+      <div class="main-content">
+        <div class="main-page-menu container-fluid dsktop">
+            <button class="tablink main-page-button" onclick="openPage('Home', this, '#cf6766')">Home</button>
+            <button class="tablink main-page-button" onclick="openPage('News', this, '#cf6766')" id="defaultOpen">News</button>
+            <button class="tablink main-page-button" onclick="openPage('Contact', this, '#cf6766')">Contact</button>
+            <button class="tablink main-page-button" onclick="openPage('About', this, '#cf6766')">About</button>
+        </div>
         <section class="row card-control justify-content-center">
             <div class="collapse col-sm-12" id="user-collapse">
                 <div class="row">
@@ -94,6 +94,7 @@
                   </div>
                 </div>
           </section>
+        </div>
     <!-- Optional JavaScript -->
     <script>
       function openPage(pageName,elmnt,color) {
