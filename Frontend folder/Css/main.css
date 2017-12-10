@@ -141,10 +141,11 @@
     .main-content-mobile-menu a {
         padding: 8px 8px 8px 32px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 100%;
         color: #818181;
         display: block;
         transition: 0.3s;
+        margin-left: 20%;
     }
     
     /* When you mouse over the navigation links, change their color */
@@ -176,9 +177,4 @@
         padding: 100px 20px;
         height: 100%;
       }
-      #Home {background-color: red;}
-      #News {background-color: green;}
-      #Contact {background-color: blue;}
-      #About {background-color: orange;}
-
 }

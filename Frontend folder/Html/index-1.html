@@ -72,34 +72,34 @@
           <div id="mobile-menu" class="main-content-mobile-menu">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <img src="../Images/150.png" alt="">
-            <a href="#">About</a>
-            <a href="#">Services</a>
-            <a href="#">Clients</a>
-            <a href="#">Contact</a>
+            <a href="Home"><i class="fa fa-bars"></i>Home</a>
+            <a href="My Profile"><i class="fa fa-user-o"></i>My Profile</a>
+            <a href="My Event"><i class="fa fa-star-o"></i>My Event</a>
+            <a href="Log out"><i class="fa fa-sign-out"></i>Log Out</a>
           </div>
           <div class="main-content-mobile-selector">
-            <button class="tablink" onclick="openPage('Home', this, 'red')" data-page='Home'>Home</button>
-            <button class="tablink" onclick="openPage('News', this, 'green')" data-page='News' id="defaultOpen">News</button>
-            <button class="tablink" onclick="openPage('Contact', this, 'blue')" data-page='Contact'>Contact</button>
-            <button class="tablink" onclick="openPage('About', this, 'orange')" data-page='About'>About</button>
+            <button class="tablink" onclick="openPage('Home-mobile', this, '#8EAEBD')">Home</button>
+            <button class="tablink" onclick="openPage('News-mobile', this, '#8EAEBD')" id="defaultOpen">News</button>
+            <button class="tablink" onclick="openPage('Contact-mobile', this, '#8EAEBD')" >Contact</button>
+            <button class="tablink" onclick="openPage('About-mobile', this, '#8EAEBD')">About</button>
           </div>
           <div class="main-content-mobile-page">
-            <div id="Home" class="tabcontent" data-page='page1'>
+            <div id="Home-mobile" class="tabcontent">
               <h3>Home</h3>
               <p>Home is where the heart is..</p>
             </div>
             
-            <div id="News" class="tabcontent" data-page='page2'> 
+            <div id="News-mobile" class="tabcontent"> 
               <h3>News</h3>
               <p>Some news this fine day!</p>
             </div>
             
-            <div id="Contact" class="tabcontent" data-page='page3'>
+            <div id="Contact-mobile" class="tabcontent">
               <h3>Contact</h3>
               <p>Get in touch, or swing by for a cup of coffee.</p>
             </div>
             
-            <div id="About" class="tabcontent" data-page='page4'>
+            <div id="About-mobile" class="tabcontent">
               <h3>About</h3>
               <p>Who we are and what we do.</p>
             </div>
@@ -141,15 +141,6 @@
 function closeNav() {
     document.getElementById("mobile-menu").style.width = "0";
 }
-      </script>
-      <script>
-        $(function (){
-          $('.tablink').on('click', function(){
-            var target = $(this).attr('data-page');
-            $('#'+target).show();
-
-          });
-        });
       </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
