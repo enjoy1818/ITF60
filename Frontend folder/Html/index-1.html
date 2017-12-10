@@ -11,9 +11,9 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="content dsktop">
+    <div class="content dsktop column-container">
       <!--left of screen desktop site-->
-      <div class="side-navbar dsktop">
+      <div class="side-navbar dsktop column">
         <!--Logo or Event name-->
         <div class="side-navbar-name">
           <h1>IT-EVENT</h1>
@@ -34,7 +34,7 @@
         </div>
       </div>
       <!--main page content desktop only-->
-      <div class="main dsktop">
+      <div class="main dsktop column">
         <!--Content selector button-->
         <div class="main-pageselector">
           <button class="tablink" onclick="openPage('Home', this, '#8EADBD')">Home</button>
@@ -43,8 +43,18 @@
           <button class="tablink" onclick="openPage('About', this, '#8EADBD')">About</button>
           <!--content page-->
             <div id="Home" class="tabcontent">
-              <h3>Home</h3>
-              <p>Home is where the heart is..</p>
+              <div>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga explicabo veniam numquam, beatae autem recusandae, nobis maiores delectus corrupti atque voluptatem exercitationem consequatur expedita esse suscipit unde amet veritatis voluptas, libero quae quisquam neque. Cupiditate vitae inventore id rem nesciunt perspiciatis, obcaecati, excepturi vel doloremque tenetur impedit? Soluta qui eos dolor cumque, numquam nesciunt fugit at dicta a necessitatibus sequi pariatur in! Eligendi harum, incidunt ducimus in quas placeat id recusandae laboriosam, possimus beatae labore amet. Laboriosam ad accusamus, minus maxime sint possimus ipsam laudantium maiores? Deserunt culpa nesciunt illum facere alias laborum doloremque repellendus expedita aperiam cum consequatur voluptatum natus possimus quis mollitia, eligendi quam nam a voluptas, corrupti facilis! Autem quaerat magni similique corporis. Rem quis neque temporibus. Incidunt fuga quas consequuntur molestiae architecto reiciendis tenetur consectetur aut ad, omnis earum labore delectus possimus similique laboriosam accusantium accusamus magnam facere est quis! Velit amet accusamus ea saepe, ipsam esse error fuga quos autem cumque laboriosam architecto dolores omnis aliquid voluptatibus rem hic repellat ut numquam praesentium repudiandae iure quam veritatis explicabo? Numquam delectus ea esse labore officiis porro ipsum? Corrupti modi placeat laboriosam, tempore repellat libero! Aperiam nobis debitis nulla vel accusamus reprehenderit dignissimos quisquam. Nihil velit incidunt exercitationem sunt minus obcaecati dolorem sint tenetur optio fugiat totam, architecto dolor in, unde delectus, cupiditate ad doloribus recusandae culpa debitis inventore nemo! Repellat fugiat ea repellendus nulla sequi modi vero. Deserunt explicabo nemo laboriosam beatae voluptatibus earum rem iusto. Suscipit totam maiores consequatur omnis, minus dolor eos, eligendi placeat accusantium odio officiis, accusamus rem modi? Ipsam distinctio exercitationem vero, aperiam alias, cumque amet, nobis porro nihil culpa doloribus tempora atque! Molestias debitis harum temporibus corrupti unde labore pariatur soluta repellat veniam, velit perspiciatis nesciunt blanditiis ad esse eos quidem culpa excepturi odio quibusdam inventore veritatis earum? Ipsam error aut earum consectetur reprehenderit delectus ex, excepturi iusto atque. Rem adipisci qui omnis laudantium. Harum veniam quibusdam quaerat maiores dolorem vero illo vitae ullam aspernatur sequi. Debitis quisquam aut ex sit accusantium eaque quis ipsum consequuntur distinctio neque aperiam ad et provident, at culpa, saepe officiis minima voluptates nihil nobis ratione quibusdam magni! At expedita odit ipsa sunt rerum quia recusandae fuga architecto veritatis mollitia. Quas, minima. Sint maxime illo ullam nostrum molestiae debitis beatae, sunt, pariatur, alias placeat tempore laborum! Corrupti ipsam neque pariatur doloremque, sint corporis deleniti nulla a iure suscipit quaerat inventore nam eum qui asperiores sunt quos minus aspernatur aut quam ab veritatis voluptates. Harum, quisquam? Eius porro cupiditate doloribus, quis repudiandae similique dignissimos sint, dicta voluptatum facilis provident voluptatibus autem deserunt, unde qui officia voluptate. Omnis soluta labore ipsam possimus facere, itaque dolorem vitae beatae quaerat officiis ex, distinctio corporis exercitationem repudiandae, fugit odit quam minima.
+              </p>
+              </div>
+              <div>
+                <h1>Upload an event image</h1>
+                <form action="asdasd" method="post">
+                  <input type="file" name="images" id="">
+                </form>
+              </div>
+
             </div>
             
             <div id="News" class="tabcontent">
@@ -64,6 +74,7 @@
         </div>
       </div>
     </div>
+    <!--Mobile content-->
     <div class="content mobile">
       <!--Menu button + navbar-->
       <div class="head-navbar">
@@ -91,6 +102,8 @@
             <div id="Home-mobile" class="tabcontent">
               <h3>Home</h3>
               <p>Home is where the heart is..</p>
+              <p>
+              </p>
             </div>
             
             <div id="News-mobile" class="tabcontent"> 
@@ -132,6 +145,7 @@
         // Add the specific color to the button used to open the tab content
         elmnt.style.backgroundColor = color;
     }
+
     
     // Get the element with id="defaultOpen" and click on it
     document.getElementById("defaultOpen").click(); 

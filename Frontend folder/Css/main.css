@@ -1,7 +1,9 @@
 
 .content{
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-width: 100vw;
     position: relative;
     padding: 1px;
 }
@@ -12,9 +14,18 @@
     .mobile{
         display: none;
     }
+    .column-container{
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
+    }
+    .column-container column{
+        flex: 1;
+    }
+    }
     .side-navbar{
         width: 15%;
-        height: 100%;
         background-color: #30415D;
         display: inline-block;
         margin-right: 1px;
@@ -25,7 +36,6 @@
     }
     .main{
         width: 83%;
-        height: 100%;
         background-color: #8EADBD;
         display: inline-block;
         position: relative;
@@ -65,7 +75,6 @@
         width: 100%;
         height: 100%;
         position: relative;
-        overflow: hidden;
     }
     .tablink{
         background-color: #30415D;
@@ -98,7 +107,7 @@
 }
 @media screen and (max-width: 1024px){
     .dsktop{
-        display: none;
+        display: none !important;
     }
     .head-navbar{
         width: 100%;
