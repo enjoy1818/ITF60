@@ -11,37 +11,85 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
-    <div class="content">
-      <div class="side-navbar">
-
+    <div class="content dsktop">
+      <!--left of screen desktop site-->
+      <div class="side-navbar dsktop">
+        <!--Logo or Event name-->
+        <div class="side-navbar-name">
+          <h1>IT-EVENT</h1>
+        </div>
+        <!--User Image-->
+        <div class="side-navbar-user-image">
+          <img src="../Images/150.png" alt="">
+        </div>
+        <!--Side navigater bar menus-->
+        <div class="side-navbar-menu">
+          <br>
+          <a href="Home"><i class="fa fa-bars"></i>Home</a>
+          <br>
+          <a href="My Profile"><i class="fa fa-user-o"></i>My Profile</a>
+          <br>
+          <a href="My Event"><i class="fa fa-star-o"></i>My Event</a>
+          <br>
+          <a href="Log out"><i class="fa fa-sign-out"></i>Log Out</a>
+        </div>
       </div>
-      <div class="main">
-
+      <!--main page content desktop only-->
+      <div class="main dsktop">
+        <!--Content selector button-->
+        <div class="main-pageselector">
+          <span>
+            <button class="tablink" onclick="openPage('content1', 'this', 'red')" id="defaultOpen">Content1</button>
+            <button class="tablink" onclick="openPage('content2', 'this', 'red')">Content2</button>
+            <button class="tablink" onclick="openPage('content3', 'this', 'red')">Content3</button>
+            <button class="tablink" onclick="openPage('content4', 'this', 'red')">Content4</button>
+          </span>
+          <div class="tabcontent" id='content1'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque, sunt.
+          </div>
+          <div class="tabcontent" id='content2'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, illo!
+          </div>
+          <div class="tabcontent" id='content3'>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, esse!
+          </div>
+          <div class="tabcontent" id='content4'>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima, labore!
+          </div>
+        </div>
       </div>
-      <footer class="footer">
+    </div>
+    <div class="content mobile">
 
-      </footer>
     </div>
     <!-- Optional JavaScript -->
     <script>
-      function openPage(pageName,elmnt,color) {
-          var i, tabcontent, tablinks;
-          tabcontent = document.getElementsByClassName("tabcontent");
-          for (i = 0; i < tabcontent.length; i++) {
-              tabcontent[i].style.display = "none";
-          }
-          tablinks = document.getElementsByClassName("tablink");
-          for (i = 0; i < tablinks.length; i++) {
-              tablinks[i].style.backgroundColor = "";
-          }
-          document.getElementById(pageName).style.display = "block";
-          elmnt.style.backgroundColor = color;
-      
-      }
-      // Get the element with id="defaultOpen" and click on it
-      document.getElementById("defaultOpen").click();
+      function openPage(pageName, elmnt, color) {
+        // Hide all elements with class="tabcontent" by default */
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+            tabcontent[i].style.display = "none";
+        }
+    
+        // Remove the background color of all tablinks/buttons
+        tablinks = document.getElementsByClassName("tablink");
+        for (i = 0; i < tablinks.length; i++) {
+            tablinks[i].style.backgroundColor = "";
+        }
+    
+        // Show the specific tab content
+        document.getElementById(pageName).style.display = "block";
+    
+        // Add the specific color to the button used to open the tab content
+        elmnt.style.backgroundColor = color;
+    }
+    
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click(); 
       </script>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src='../Javascript/main.js'></script>
     <script src="https://use.fontawesome.com/81c2cd76b6.js"></script>
